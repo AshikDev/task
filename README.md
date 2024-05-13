@@ -1,16 +1,17 @@
 # Challenge 1
 
-## Singleton Design Pattern
+## SOLUTION
 
-This code segment demonstrates the use of the Singleton design pattern with a PHP class, `DataBaseConnector`. The Singleton pattern ensures that a class has only one instance and provides a global point of access to it.
+### Singleton Design Pattern
+This code segment demonstrates the use of the **Singleton design pattern** with a PHP class, `DataBaseConnector`. The Singleton pattern ensures that a class has only one instance and provides a global point of access to it.
 
-## Implementation Details
+### Implementation Details
 
 - **Private Constructor**: The constructor of the `DataBaseConnector` class is private to prevent the instantiation of the class from outside.
 - **Static Instance Variable**: A private static variable `$obj` holds the instance of the class.
 - **Public Static Method**: The `getConnect()` static method checks if the class instance exists and returns it if available. If not, it creates a new instance, stores it in the static variable, and then returns it.
 
-## Usage
+### Usage
 
 Here is how you can use the `DataBaseConnector` class to ensure that only one instance of the database connection is used across your application:
 
