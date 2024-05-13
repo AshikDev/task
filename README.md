@@ -75,18 +75,18 @@ class TemperatureStats {
      * @param array $temperatures Array of floating point numbers representing temperatures.
      * @return float Returns the temperature closest to zero, or 0 if the array is empty.
      */
-    public function closestToZero(array $temperatures): float
+    public function closestToZero(array $ts): float
     {
         // Return 0 if the array is empty
-        if (empty($temperatures)) {
+        if (empty($ts)) {
             return 0.0;
         }
 
         // Initialize the closest temperature to the first element in the array
-        $closest = $temperatures[0];
+        $closest = $ts[0];
 
         // Loop through the temperatures to find the one closest to zero
-        foreach ($temperatures as $temperature) {
+        foreach ($ts as $temperature) {
             // Check if the current temperature is closer to zero than the previously found closest
             if (abs($temperature) < abs($closest)) {
                 $closest = $temperature;
