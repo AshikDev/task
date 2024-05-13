@@ -72,7 +72,7 @@ class TemperatureStats {
      * Finds the temperature closest to zero from an array of temperatures.
      * This method assumes that temperatures are always within the range of -273 to 5526.
      *
-     * @param array $temperatures Array of floating point numbers representing temperatures.
+     * @param array $ts Array of floating point numbers representing temperatures.
      * @return float Returns the temperature closest to zero, or 0 if the array is empty.
      */
     public function closestToZero(array $ts): float
